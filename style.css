@@ -138,6 +138,20 @@ summary svg { width: 14px; height: 14px; flex: none; stroke: var(--white); fill:
 details[open] summary svg { transform: rotate(180deg); }
 details p { padding: 0 20px; margin: 0 0 16px; font-size: .75rem; text-align: left; }
 
+/* Long legal text: normal case so it stays readable */
+.legal { text-align: left; text-transform: none; letter-spacing: .01em; padding: 40px 0; }
+.legal h2 { font-size: 1.1rem; letter-spacing: .25em; margin: 36px 0 12px; color: var(--white); }
+.legal p, .legal li { font-size: .88rem; color: var(--grey); max-width: none; margin: 0 0 14px; }
+.legal ul { padding-left: 20px; margin: 0 0 14px; }
+.legal li { margin-bottom: 8px; }
+.legal a { color: var(--white); text-decoration: underline; text-underline-offset: 3px; text-decoration-color: var(--dim); }
+.legal a:hover { text-decoration-color: var(--white); }
+.legal .wrap { overflow-x: auto; margin: 0 0 16px; }
+.legal table { width: 100%; border-collapse: collapse; font-size: .8rem; }
+.legal th, .legal td { text-align: left; vertical-align: top; padding: 9px 8px; border-bottom: 1px solid var(--line); }
+.legal th { color: var(--white); font-weight: 500; }
+.legal td { color: var(--grey); }
+
 footer { text-align: center; padding: 40px 16px 48px; }
 .copy { font-size: .68rem; letter-spacing: .25em; color: var(--white); margin: 0 auto 14px; }
 .attrib { font-size: .6rem; letter-spacing: .12em; color: var(--dim); max-width: 520px; margin: 0 auto; }
